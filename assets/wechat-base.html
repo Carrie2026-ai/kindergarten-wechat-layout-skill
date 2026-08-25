@@ -1,0 +1,20 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>微信公众号安全基础模板</title><style>body{margin:0;font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#F3F0E8;color:#444}.bar{max-width:640px;margin:0 auto;padding:20px 16px}.copy-btn{background:#78907A;color:white;border:0;border-radius:8px;padding:11px 24px;font-size:15px;cursor:pointer}#tip{font-size:13px;margin-left:10px}.wrap{max-width:640px;margin:0 auto 48px;background:#fff}</style></head><body><div class="bar"><b>微信公众号安全基础模板</b><p style="font-size:13px;line-height:1.8;color:#666">公共示例：虚构园所与占位图片。点击复制后可粘贴到微信公众号后台继续修改。</p><button class="copy-btn" id="copyBtn">一键复制排版</button><span id="tip"></span></div><div class="wrap"><div id="wx-preview" style="padding:26px 18px 42px;background:#fff">
+<section style="border-bottom:1px solid #9CAF9A;padding-bottom:22px;"><section style="font-size:11px;letter-spacing:4px;color:#9CAF9A;margin-bottom:10px;">园所日常</section><section style="font-size:24px;font-weight:600;line-height:1.5;color:#444;">风从菜园吹过来<br>——青禾幼儿园的一次自然观察</section></section>
+<section style="border-left:3px solid #9CAF9A;padding:10px 14px;margin:22px 0;font-size:15px;line-height:1.9;color:#4A4A4A;"><span style="color:#D7A985;font-weight:600;">孩子们</span>：“叶子为什么有不同的味道？”</section>
+<section style="font-size:15.5px;line-height:2;color:#4A4A4A;margin:15px 0;">午后的菜园里，孩子们从一片叶子开始了讨论。有人闻，有人摸，也有人蹲下来寻找叶脉里的“秘密”。老师没有急着给答案，而是把问题留在了现场。</section>
+<section style="height:300px;background:#F2EEE5;text-align:center;padding-top:140px;box-sizing:border-box;color:#999;font-size:13px;margin:18px 0;">真实照片位：孩子在菜园观察</section>
+<section style="border-top:1px solid #9CAF9A;margin-top:40px;padding-top:15px;"><section style="font-size:32px;color:#9CAF9A;line-height:1;">01</section><section style="font-size:20px;font-weight:600;line-height:1.5;margin-top:8px;">从一片叶子开始</section></section>
+<section style="font-size:15px;line-height:1.95;color:#4A4A4A;margin:15px 0;">孩子们把不同叶片放在一起比较。颜色、气味、软硬、边缘形状，慢慢都成了可以讨论的问题。</section>
+<section style="background:#E3EAE2;padding:13px 16px;margin:20px 0;"><section style="font-size:11px;letter-spacing:2px;color:#78907A;">老师的观察</section><section style="font-size:15px;line-height:1.9;margin-top:6px;">当材料足够真实，问题常常不需要被“设计”出来，它会自己发生。</section></section>
+<section style="height:260px;background:#F2EEE5;text-align:center;padding-top:120px;box-sizing:border-box;color:#999;font-size:13px;margin:18px 0;">双图位置：叶片比较 / 孩子记录</section>
+<section style="font-size:15px;line-height:2;color:#4A4A4A;margin:34px 0 12px;">一片叶子没有告诉孩子标准答案，却给了他们继续靠近世界的理由。</section>
+<section style="border-top:1px solid #9CAF9A;margin-top:38px;padding-top:28px;text-align:center;"><section style="font-size:13px;color:#78907A;letter-spacing:2px;">青禾幼儿园 · 看见每一种生长</section></section>
+</div></div><script>
+(function(){
+  var btn=document.getElementById('copyBtn'), tip=document.getElementById('tip'), source=document.getElementById('wx-preview');
+  function getHtml(){return '<section style="font-family:-apple-system,\'PingFang SC\',\'Microsoft YaHei\',sans-serif;">'+source.innerHTML+'</section>';}
+  function getPlain(){return source.innerText||source.textContent||'';}
+  function fallback(){var r=document.createRange();r.selectNodeContents(source);var s=window.getSelection();s.removeAllRanges();s.addRange(r);var ok=false;try{ok=document.execCommand('copy')}catch(e){}s.removeAllRanges();return Promise.resolve(ok);}
+  btn.addEventListener('click',function(){var p;if(window.ClipboardItem&&navigator.clipboard&&navigator.clipboard.write){var item=new ClipboardItem({'text/html':new Blob([getHtml()],{type:'text/html'}),'text/plain':new Blob([getPlain()],{type:'text/plain'})});p=navigator.clipboard.write([item]).then(function(){return true}).catch(fallback);}else{p=fallback();}p.then(function(ok){tip.textContent=ok?'✓ 已复制，可去公众号后台粘贴':'复制失败，请手动全选正文区复制';tip.style.color=ok?'#78907A':'#B98263';});});
+})();
+</script></body></html>

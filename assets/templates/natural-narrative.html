@@ -1,0 +1,18 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Preset 03 · 自然叙事</title><style>body{margin:0;font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#EFEEE9;color:#444}.bar{max-width:640px;margin:0 auto;padding:20px 16px}.copy-btn{background:#879488;color:white;border:0;border-radius:8px;padding:11px 24px;font-size:15px;cursor:pointer}#tip{font-size:13px;margin-left:10px}.wrap{max-width:640px;margin:0 auto 48px;background:#fff}</style></head><body><div class="bar"><b>Preset 03 · 自然叙事</b><p style="font-size:13px;line-height:1.8;color:#666">公共示例：虚构园所与占位图片。点击复制后可粘贴到微信公众号后台继续修改。</p><button class="copy-btn" id="copyBtn">一键复制排版</button><span id="tip"></span></div><div class="wrap"><div id="wx-preview" style="padding:26px 18px 42px;background:#fff">
+<section style="font-size:11px;letter-spacing:3px;color:#8A9487;margin-bottom:9px;">儿童观察 · 记录</section><section style="font-size:25px;font-weight:600;line-height:1.5;color:#3F4540;">今天，他们决定把水引到更远的地方</section>
+<section style="height:360px;background:#F1F0EA;text-align:center;padding-top:170px;box-sizing:border-box;color:#999;font-size:13px;margin:18px 0;">全宽照片：孩子搭建水渠</section>
+<section style="font-size:15.5px;line-height:2.05;color:#464A46;margin:26px 0;">一开始只是两块木板。水流到中间就停住了。孩子们没有离开，而是把旁边的软管、石头和几个塑料盒都搬了过来。</section>
+<section style="font-size:17px;font-weight:600;line-height:1.8;color:#5B6D5D;margin:30px 0 10px;">“这里太低了。”</section>
+<section style="font-size:15.5px;line-height:2.05;color:#464A46;margin:12px 0;">一句话以后，三个人同时蹲了下来。有人垫石头，有人扶着管子，另一个孩子跑去接新的水。</section>
+<section style="height:300px;background:#F3EFE7;text-align:center;padding-top:140px;box-sizing:border-box;color:#999;font-size:13px;margin:18px 0;">照片：调整材料</section>
+<section style="font-size:15.5px;line-height:2.05;color:#464A46;margin:24px 0;">老师站在旁边，没有马上提供“正确方法”。真正值得记录的，是孩子如何发现问题，又如何让自己的想法继续往前走。</section>
+<section style="margin:38px 0 10px;color:#879488;font-size:13px;letter-spacing:2px;">观察之后</section><section style="font-size:15.5px;line-height:2.05;color:#464A46;">下一次，我们准备增加不同粗细、不同软硬的管子，让材料本身继续提出新的问题。</section>
+</div></div><script>
+(function(){
+  var btn=document.getElementById('copyBtn'), tip=document.getElementById('tip'), source=document.getElementById('wx-preview');
+  function getHtml(){return '<section style="font-family:-apple-system,\'PingFang SC\',\'Microsoft YaHei\',sans-serif;">'+source.innerHTML+'</section>';}
+  function getPlain(){return source.innerText||source.textContent||'';}
+  function fallback(){var r=document.createRange();r.selectNodeContents(source);var s=window.getSelection();s.removeAllRanges();s.addRange(r);var ok=false;try{ok=document.execCommand('copy')}catch(e){}s.removeAllRanges();return Promise.resolve(ok);}
+  btn.addEventListener('click',function(){var p;if(window.ClipboardItem&&navigator.clipboard&&navigator.clipboard.write){var item=new ClipboardItem({'text/html':new Blob([getHtml()],{type:'text/html'}),'text/plain':new Blob([getPlain()],{type:'text/plain'})});p=navigator.clipboard.write([item]).then(function(){return true}).catch(fallback);}else{p=fallback();}p.then(function(ok){tip.textContent=ok?'✓ 已复制，可去公众号后台粘贴':'复制失败，请手动全选正文区复制';tip.style.color=ok?'#78907A':'#B98263';});});
+})();
+</script></body></html>

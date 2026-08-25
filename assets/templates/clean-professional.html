@@ -1,0 +1,18 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Preset 04 · 清爽专业</title><style>body{margin:0;font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#EEF1EF;color:#444}.bar{max-width:640px;margin:0 auto;padding:20px 16px}.copy-btn{background:#48665C;color:white;border:0;border-radius:8px;padding:11px 24px;font-size:15px;cursor:pointer}#tip{font-size:13px;margin-left:10px}.wrap{max-width:640px;margin:0 auto 48px;background:#fff}</style></head><body><div class="bar"><b>Preset 04 · 清爽专业</b><p style="font-size:13px;line-height:1.8;color:#666">公共示例：虚构园所与占位图片。点击复制后可粘贴到微信公众号后台继续修改。</p><button class="copy-btn" id="copyBtn">一键复制排版</button><span id="tip"></span></div><div class="wrap"><div id="wx-preview" style="padding:26px 18px 42px;background:#fff">
+<section style="border-bottom:2px solid #48665C;padding-bottom:18px;"><section style="font-size:11px;letter-spacing:3px;color:#7D958C;">教研现场</section><section style="font-size:24px;font-weight:600;color:#34443F;line-height:1.5;margin-top:8px;">从“孩子在玩什么”到“我们看见了什么”</section></section>
+<section style="font-size:15.5px;line-height:2;color:#48514E;margin:22px 0;">本次教研围绕近期游戏观察记录展开。教师不急于评价活动“好不好”，而是先回到现场证据：孩子做了什么、说了什么、材料发生了什么变化。</section>
+<section style="border-top:1px solid #A9B8B2;margin-top:38px;padding-top:14px;"><section style="font-size:30px;color:#6C8A7F;">01</section><section style="font-size:20px;font-weight:600;color:#34443F;margin-top:6px;">先把事实说清楚</section></section>
+<section style="font-size:15px;line-height:1.95;color:#48514E;margin:14px 0;">记录中优先保留可观察事实，减少“很专注”“能力很强”等无法直接被证据支持的判断。</section>
+<section style="background:#EEF2F0;padding:14px 16px;margin:20px 0;"><b style="color:#48665C;font-size:14px;">本轮共识</b><section style="font-size:14.5px;line-height:1.9;color:#48514E;margin-top:6px;">事实描述 → 关系分析 → 学习判断 → 下一步支持。四步之间不要跳步。</section></section>
+<section style="height:300px;background:#F3F5F4;text-align:center;padding-top:140px;box-sizing:border-box;color:#999;font-size:13px;margin:18px 0;">现场照片 / 观察记录截图</section>
+<section style="border-top:1px solid #A9B8B2;margin-top:38px;padding-top:14px;"><section style="font-size:30px;color:#6C8A7F;">02</section><section style="font-size:20px;font-weight:600;color:#34443F;margin-top:6px;">再讨论下一步支持</section></section>
+<section style="font-size:15px;line-height:1.95;color:#48514E;margin:14px 0;">支持不是马上“教会”，而是判断：此刻增加什么材料、改变什么变量，能够让儿童继续研究。</section>
+</div></div><script>
+(function(){
+  var btn=document.getElementById('copyBtn'), tip=document.getElementById('tip'), source=document.getElementById('wx-preview');
+  function getHtml(){return '<section style="font-family:-apple-system,\'PingFang SC\',\'Microsoft YaHei\',sans-serif;">'+source.innerHTML+'</section>';}
+  function getPlain(){return source.innerText||source.textContent||'';}
+  function fallback(){var r=document.createRange();r.selectNodeContents(source);var s=window.getSelection();s.removeAllRanges();s.addRange(r);var ok=false;try{ok=document.execCommand('copy')}catch(e){}s.removeAllRanges();return Promise.resolve(ok);}
+  btn.addEventListener('click',function(){var p;if(window.ClipboardItem&&navigator.clipboard&&navigator.clipboard.write){var item=new ClipboardItem({'text/html':new Blob([getHtml()],{type:'text/html'}),'text/plain':new Blob([getPlain()],{type:'text/plain'})});p=navigator.clipboard.write([item]).then(function(){return true}).catch(fallback);}else{p=fallback();}p.then(function(ok){tip.textContent=ok?'✓ 已复制，可去公众号后台粘贴':'复制失败，请手动全选正文区复制';tip.style.color=ok?'#78907A':'#B98263';});});
+})();
+</script></body></html>
