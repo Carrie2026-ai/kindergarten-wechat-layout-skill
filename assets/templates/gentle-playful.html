@@ -1,18 +1,44 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Preset 02 · 轻童趣</title><style>body{margin:0;font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#F4F1EC;color:#444}.bar{max-width:640px;margin:0 auto;padding:20px 16px}.copy-btn{background:#86A7A4;color:white;border:0;border-radius:8px;padding:11px 24px;font-size:15px;cursor:pointer}#tip{font-size:13px;margin-left:10px}.wrap{max-width:640px;margin:0 auto 48px;background:#fff}</style></head><body><div class="bar"><b>Preset 02 · 轻童趣</b><p style="font-size:13px;line-height:1.8;color:#666">公共示例：虚构园所与占位图片。点击复制后可粘贴到微信公众号后台继续修改。</p><button class="copy-btn" id="copyBtn">一键复制排版</button><span id="tip"></span></div><div class="wrap"><div id="wx-preview" style="padding:26px 18px 42px;background:#fff">
-<section style="text-align:center;padding-bottom:18px;"><section style="font-size:11px;letter-spacing:3px;color:#86A7A4;">SUMMER MEMORY</section><section style="font-size:25px;font-weight:600;line-height:1.55;color:#49565A;margin-top:8px;">把夏天装进口袋里</section><section style="font-size:13px;color:#9A9A96;margin-top:8px;">青禾幼儿园 · 夏日活动记</section></section>
-<section style="height:320px;background:#EEF4F6;text-align:center;padding-top:150px;box-sizing:border-box;color:#999;font-size:13px;margin:18px 0;">大图位：活动主视觉</section>
-<section style="font-size:15.5px;line-height:2;color:#4E5558;margin:22px 0;">这一天没有复杂的安排。孩子们追着影子跑、把花瓣放进水里，也认真研究起一只停在窗边的小蜗牛。</section>
-<section style="margin:30px 0 12px;"><span style="display:inline-block;background:#DCEDEA;color:#527B75;border-radius:12px;padding:4px 11px;font-size:12px;">01 · 遇见</span><section style="font-size:20px;font-weight:600;color:#4B5D60;margin-top:9px;">小小发现，也值得郑重记录</section></section>
-<table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:separate;border-spacing:7px 0;margin:18px 0;"><tr><td width="50%" style="vertical-align:top;padding:0;"><section style="height:230px;background:#F7EDEA;text-align:center;padding-top:105px;box-sizing:border-box;color:#999;font-size:13px;margin:18px 0;">照片 A</section></td><td width="50%" style="vertical-align:top;padding:0;"><section style="height:230px;background:#EEF2E5;text-align:center;padding-top:105px;box-sizing:border-box;color:#999;font-size:13px;margin:18px 0;">照片 B</section></td></tr></table>
-<section style="border-left:3px solid #E8B6A0;padding:10px 14px;margin:22px 0;font-size:15px;line-height:1.9;color:#4E5558;"><span style="color:#D18D72;font-weight:600;">乐乐</span>：“老师，你看，影子也会跟我们一起长大吗？”</section>
-<section style="font-size:15px;line-height:1.95;color:#4E5558;margin:18px 0;">童趣不一定要靠很多卡通元素。真实的表情、意外的小发现，以及一点点轻盈的色彩，就已经足够。</section>
-<section style="text-align:center;margin-top:42px;padding-top:24px;border-top:1px dashed #BCD1CF;"><span style="font-size:12px;color:#86A7A4;letter-spacing:3px;">• SEE YOU NEXT TIME •</span></section>
-</div></div><script>
-(function(){
-  var btn=document.getElementById('copyBtn'), tip=document.getElementById('tip'), source=document.getElementById('wx-preview');
-  function getHtml(){return '<section style="font-family:-apple-system,\'PingFang SC\',\'Microsoft YaHei\',sans-serif;">'+source.innerHTML+'</section>';}
-  function getPlain(){return source.innerText||source.textContent||'';}
-  function fallback(){var r=document.createRange();r.selectNodeContents(source);var s=window.getSelection();s.removeAllRanges();s.addRange(r);var ok=false;try{ok=document.execCommand('copy')}catch(e){}s.removeAllRanges();return Promise.resolve(ok);}
-  btn.addEventListener('click',function(){var p;if(window.ClipboardItem&&navigator.clipboard&&navigator.clipboard.write){var item=new ClipboardItem({'text/html':new Blob([getHtml()],{type:'text/html'}),'text/plain':new Blob([getPlain()],{type:'text/plain'})});p=navigator.clipboard.write([item]).then(function(){return true}).catch(fallback);}else{p=fallback();}p.then(function(ok){tip.textContent=ok?'✓ 已复制，可去公众号后台粘贴':'复制失败，请手动全选正文区复制';tip.style.color=ok?'#78907A':'#B98263';});});
-})();
-</script></body></html>
+<section style="margin:0;padding:0;background-color:#FFFFFF;">
+  <section style="margin:0;padding:0;background-color:#F7F2E9;">
+    <section style="margin:0;padding:26px 18px 12px;background-color:#F7F2E9;text-align:center;">
+      <section style="margin:0;padding:24px 16px;background-color:#FFFDFC;border:1px solid #EDE4D8;border-radius:18px;">
+        <p style="margin:0;padding:0;font-size:13px;line-height:1.7;color:#6E918E;">静享亲子阅读时光</p>
+        <p style="margin:12px 0 0;padding:0;font-size:28px;line-height:1.5;color:#43514F;font-weight:bold;">亲子故事会</p>
+        <p style="margin:8px 0 0;padding:0;font-size:12px;line-height:1.8;letter-spacing:2px;color:#B98B68;">PARENT · CHILD · STORY</p>
+      </section>
+    </section>
+
+    <section style="margin:0;padding:8px 18px;background-color:#F7F2E9;text-align:center;">
+      <p style="margin:0;padding:0;font-size:12px;line-height:1.8;color:#B98B68;">●　●　●</p>
+    </section>
+
+    <section style="margin:0;padding:18px 22px 8px;background-color:#F7F2E9;text-align:center;">
+      <p style="margin:0;padding:0;font-size:20px;line-height:1.7;color:#43514F;font-weight:bold;">星期五</p>
+      <p style="margin:2px 0 0;padding:0;font-size:22px;line-height:1.7;color:#43514F;font-weight:bold;">2026年9月4日</p>
+    </section>
+
+    <section style="margin:0;padding:14px 20px;background-color:#F7F2E9;">
+      <section style="margin:0;padding:24px 18px;background-color:#FFFDFC;border:1px solid #EDE4D8;border-radius:14px;text-align:center;">
+        <p style="margin:0 0 12px;padding:0;font-size:16px;line-height:1.9;color:#4E5558;">大家好，欢迎收听《亲子故事会》</p>
+        <p style="margin:0 0 16px;padding:0;font-size:16px;line-height:1.9;color:#4E5558;">今天来做客的是：</p>
+        <section style="margin:0 0 8px;padding:11px 12px;background-color:#E6EFED;border-radius:9px;">
+          <p style="margin:0;padding:0;font-size:15px;line-height:1.8;color:#52716D;"><strong>主讲嘉宾：</strong>大四班 小朋友</p>
+        </section>
+        <section style="margin:0;padding:11px 12px;background-color:#F2E7DB;border-radius:9px;">
+          <p style="margin:0;padding:0;font-size:15px;line-height:1.8;color:#6D5C4E;"><strong>伴读嘉宾：</strong>家长</p>
+        </section>
+      </section>
+    </section>
+
+    <section style="margin:0;padding:10px 18px;background-color:#F7F2E9;">
+      <section style="margin:0;padding:30px 16px;background-color:#E9F0E8;border:1px dashed #BFD0C2;border-radius:16px;text-align:center;">
+        <p style="margin:0;padding:0;font-size:13px;line-height:1.8;color:#70847A;">【插画位｜小书本 / 叶子 / 小花 / 班级 IP】</p>
+        <p style="margin:4px 0 0;padding:0;font-size:12px;line-height:1.7;color:#87958E;">请在秀米或公众号后台替换为真实图片素材；没有图时保留浅绿块或删除</p>
+      </section>
+    </section>
+
+    <section style="margin:0;padding:16px 22px 30px;background-color:#F7F2E9;text-align:center;">
+      <p style="margin:0;padding:14px 0 0;border-top:1px dashed #CBBDAA;font-size:12px;line-height:1.8;letter-spacing:2px;color:#6E918E;">青禾幼儿园 · 亲子阅读时光</p>
+    </section>
+  </section>
+</section>

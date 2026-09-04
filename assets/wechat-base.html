@@ -1,20 +1,89 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>微信公众号安全基础模板</title><style>body{margin:0;font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#F3F0E8;color:#444}.bar{max-width:640px;margin:0 auto;padding:20px 16px}.copy-btn{background:#78907A;color:white;border:0;border-radius:8px;padding:11px 24px;font-size:15px;cursor:pointer}#tip{font-size:13px;margin-left:10px}.wrap{max-width:640px;margin:0 auto 48px;background:#fff}</style></head><body><div class="bar"><b>微信公众号安全基础模板</b><p style="font-size:13px;line-height:1.8;color:#666">公共示例：虚构园所与占位图片。点击复制后可粘贴到微信公众号后台继续修改。</p><button class="copy-btn" id="copyBtn">一键复制排版</button><span id="tip"></span></div><div class="wrap"><div id="wx-preview" style="padding:26px 18px 42px;background:#fff">
-<section style="border-bottom:1px solid #9CAF9A;padding-bottom:22px;"><section style="font-size:11px;letter-spacing:4px;color:#9CAF9A;margin-bottom:10px;">园所日常</section><section style="font-size:24px;font-weight:600;line-height:1.5;color:#444;">风从菜园吹过来<br>——青禾幼儿园的一次自然观察</section></section>
-<section style="border-left:3px solid #9CAF9A;padding:10px 14px;margin:22px 0;font-size:15px;line-height:1.9;color:#4A4A4A;"><span style="color:#D7A985;font-weight:600;">孩子们</span>：“叶子为什么有不同的味道？”</section>
-<section style="font-size:15.5px;line-height:2;color:#4A4A4A;margin:15px 0;">午后的菜园里，孩子们从一片叶子开始了讨论。有人闻，有人摸，也有人蹲下来寻找叶脉里的“秘密”。老师没有急着给答案，而是把问题留在了现场。</section>
-<section style="height:300px;background:#F2EEE5;text-align:center;padding-top:140px;box-sizing:border-box;color:#999;font-size:13px;margin:18px 0;">真实照片位：孩子在菜园观察</section>
-<section style="border-top:1px solid #9CAF9A;margin-top:40px;padding-top:15px;"><section style="font-size:32px;color:#9CAF9A;line-height:1;">01</section><section style="font-size:20px;font-weight:600;line-height:1.5;margin-top:8px;">从一片叶子开始</section></section>
-<section style="font-size:15px;line-height:1.95;color:#4A4A4A;margin:15px 0;">孩子们把不同叶片放在一起比较。颜色、气味、软硬、边缘形状，慢慢都成了可以讨论的问题。</section>
-<section style="background:#E3EAE2;padding:13px 16px;margin:20px 0;"><section style="font-size:11px;letter-spacing:2px;color:#78907A;">老师的观察</section><section style="font-size:15px;line-height:1.9;margin-top:6px;">当材料足够真实，问题常常不需要被“设计”出来，它会自己发生。</section></section>
-<section style="height:260px;background:#F2EEE5;text-align:center;padding-top:120px;box-sizing:border-box;color:#999;font-size:13px;margin:18px 0;">双图位置：叶片比较 / 孩子记录</section>
-<section style="font-size:15px;line-height:2;color:#4A4A4A;margin:34px 0 12px;">一片叶子没有告诉孩子标准答案，却给了他们继续靠近世界的理由。</section>
-<section style="border-top:1px solid #9CAF9A;margin-top:38px;padding-top:28px;text-align:center;"><section style="font-size:13px;color:#78907A;letter-spacing:2px;">青禾幼儿园 · 看见每一种生长</section></section>
-</div></div><script>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>幼儿园公众号排版助手 · 一键复制底座</title>
+<style>
+body{margin:0;font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#F4F1EA;color:#3F4944;}
+.toolbar{max-width:677px;margin:0 auto;padding:22px 18px 12px;}
+.toolbar h1{font-size:17px;line-height:1.5;margin:0 0 8px;font-weight:600;}
+.toolbar p{font-size:13px;line-height:1.8;color:#68726C;margin:0 0 14px;}
+button{border:0;border-radius:8px;padding:11px 22px;background:#6E918E;color:#FFFFFF;font-size:15px;cursor:pointer;}
+#tip{font-size:13px;margin-left:10px;color:#68726C;}
+.preview-shell{max-width:677px;margin:10px auto 48px;background:#FFFFFF;border:1px solid #E4DDD3;}
+</style>
+</head>
+<body>
+<div class="toolbar">
+  <h1>幼儿园公众号排版助手 · 微信兼容预览</h1>
+  <p>点击按钮只复制正式正文的 <strong>text/html</strong>。按钮、说明和预览外壳不会进入公众号正文。</p>
+  <button id="copyBtn">一键复制到公众号</button><span id="tip"></span>
+</div>
+
+<div class="preview-shell">
+  <section id="wx-preview">
+    <section style="margin:0;padding:0;background-color:#FFFFFF;">
+      <section style="margin:0;padding:0;background-color:#F7F2E9;">
+        <section style="margin:0;padding:26px 18px 12px;background-color:#F7F2E9;text-align:center;">
+          <section style="margin:0;padding:24px 16px;background-color:#FFFDFC;border:1px solid #EDE4D8;border-radius:18px;">
+            <p style="margin:0;padding:0;font-size:13px;line-height:1.7;color:#6E918E;">静享亲子阅读时光</p>
+            <p style="margin:12px 0 0;padding:0;font-size:28px;line-height:1.5;color:#43514F;font-weight:bold;">亲子故事会</p>
+            <p style="margin:8px 0 0;padding:0;font-size:12px;line-height:1.8;letter-spacing:2px;color:#B98B68;">PARENT · CHILD · STORY</p>
+          </section>
+        </section>
+        <section style="margin:0;padding:12px 20px 30px;background-color:#F7F2E9;">
+          <section style="margin:0;padding:26px 18px;background-color:#FFFDFC;border:1px solid #EDE4D8;border-radius:14px;text-align:center;">
+            <p style="margin:0;padding:0;font-size:15px;line-height:1.9;color:#4E5558;">这里替换为本次生成的正式公众号正文。</p>
+          </section>
+        </section>
+      </section>
+    </section>
+  </section>
+</div>
+
+<script>
 (function(){
-  var btn=document.getElementById('copyBtn'), tip=document.getElementById('tip'), source=document.getElementById('wx-preview');
-  function getHtml(){return '<section style="font-family:-apple-system,\'PingFang SC\',\'Microsoft YaHei\',sans-serif;">'+source.innerHTML+'</section>';}
-  function getPlain(){return source.innerText||source.textContent||'';}
-  function fallback(){var r=document.createRange();r.selectNodeContents(source);var s=window.getSelection();s.removeAllRanges();s.addRange(r);var ok=false;try{ok=document.execCommand('copy')}catch(e){}s.removeAllRanges();return Promise.resolve(ok);}
-  btn.addEventListener('click',function(){var p;if(window.ClipboardItem&&navigator.clipboard&&navigator.clipboard.write){var item=new ClipboardItem({'text/html':new Blob([getHtml()],{type:'text/html'}),'text/plain':new Blob([getPlain()],{type:'text/plain'})});p=navigator.clipboard.write([item]).then(function(){return true}).catch(fallback);}else{p=fallback();}p.then(function(ok){tip.textContent=ok?'✓ 已复制，可去公众号后台粘贴':'复制失败，请手动全选正文区复制';tip.style.color=ok?'#78907A':'#B98263';});});
+  var btn=document.getElementById('copyBtn');
+  var tip=document.getElementById('tip');
+  var source=document.getElementById('wx-preview');
+
+  function html(){
+    return source.innerHTML;
+  }
+
+  function manualFallback(){
+    var range=document.createRange();
+    range.selectNodeContents(source);
+    var sel=window.getSelection();
+    sel.removeAllRanges();
+    sel.addRange(range);
+    var ok=false;
+    try{ok=document.execCommand('copy');}catch(e){ok=false;}
+    sel.removeAllRanges();
+    return ok;
+  }
+
+  btn.addEventListener('click',function(){
+    if(window.ClipboardItem && navigator.clipboard && navigator.clipboard.write){
+      var item=new ClipboardItem({
+        'text/html':new Blob([html()],{type:'text/html'})
+      });
+      navigator.clipboard.write([item]).then(function(){
+        tip.textContent='✓ 已复制，可粘贴到公众号后台';
+        tip.style.color='#52716D';
+      }).catch(function(){
+        var ok=manualFallback();
+        tip.textContent=ok?'✓ 已复制；建议粘贴后检查样式':'复制失败，请手动选中正文区域复制';
+        tip.style.color=ok?'#52716D':'#A36D52';
+      });
+    }else{
+      var ok=manualFallback();
+      tip.textContent=ok?'✓ 已复制；建议粘贴后检查样式':'浏览器不支持，请手动选中正文区域复制';
+      tip.style.color=ok?'#52716D':'#A36D52';
+    }
+  });
 })();
-</script></body></html>
+</script>
+</body>
+</html>
